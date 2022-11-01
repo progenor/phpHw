@@ -16,6 +16,7 @@
             <div class="result">
                 <h1>Result:</h2>
             <?php
+            // declare variables
                 $tipus = $_POST['tipus'];
                 $email = $_POST['email'];
                 $telefon = $_POST['telefon'];
@@ -30,7 +31,15 @@
                 $leiras = $_POST['leiras'];
                 $ar = $_POST['ar'];
 
-               
+                // check if fields are valid
+
+                
+
+
+
+
+
+               // print variables
                 echo "Tipus: $tipus <br>";
                 echo "Email: $email <br>";
                 echo "Telefon: $telefon <br>";
@@ -44,15 +53,32 @@
                 echo "Kert: $kert <br>";
                 echo "Leiras: $leiras <br>";
                 echo "Ar: $ar <br>";
+
+                // database connection
+                // $conn = new mysqli('localhost', 'root', '', 'mysite');
+                // if($conn->connect_error){
+                //   die("Connection failed: ".$conn->connect_error);
+                // }else{
+                //   $stmt = $conn->prepare("INSERT INTO data(tipus, email, telefon, terulet, fekves, szintszam,
+                //     szobaszam,furdo, garazs, lift, kert, leiras, ar)
+                //     values(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                //     $stmt->bind_param("ssiiiiiiiiisi". $tipus, $email, $telefon, $terulet, $fekves, $szintszam, $szobaszam, $furdo, $garazs, $lift, $kert, $leiras, $ar);
+                //     $stmt->execute();
+                //     echo "Data inserted successfully";
+                //     $stmt->close();
+                //     $conn->close();
+                // }
+                  
+                
               ?>
             </div>
           </div>
-</main> 
+</main>
       <footer>
       <p>
         Created by
         <a href="https://github.com/progenor">Progenor(Kantor Csongor)</a>
       </p>
-    </footer> 
+    </footer>
 </body>
 </html>
